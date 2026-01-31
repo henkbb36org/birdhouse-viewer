@@ -4,11 +4,11 @@ A Progressive Web Application (PWA) for monitoring ESP32-CAM birdhouses with rea
 
 ## Overview
 
-The Birdhouse Viewer system enables users to monitor their birdhouses remotely using ESP32-CAM devices with motion sensors like mmwave, infrared break beam sensors or ultrasonic sensors. The system provides live video streaming on demand and sends push notifications when motion is detected, all while minimizing power consumption through intelligent on-demand streaming.
+The Birdhouse Viewer system enables users to monitor their birdhouses remotely using ESP32-CAM devices with motion sensors like mmwave, infrared break beam sensors or ultrasonic sensors. The system provides live video streaming on demand and sends push notifications when motion is detected, all while minimizing power consumption through intelligent on-demand streaming. The setup runs services on a server to monitor multiple birdhouses, users can watch video streams across the internet without having to configure port forwarding on their home router.
 
 ### Key Features
 
-**Real-Time Streaming**: Watch live video from your birdhouse via MQTT over WebSocket, with automatic 60-second timeout to conserve bandwidth and power.
+**Real-Time Streaming**: Watch live video from your birdhouse via MQTT over WebSocket, with automatic 60-second timeout to conserve bandwidth and power. 
 
 **Motion Detection Alerts**: Receive instant push notifications on your smartphone when the mmwave sensor detects motion in your birdhouse.
 
