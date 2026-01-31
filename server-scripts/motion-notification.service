@@ -11,7 +11,7 @@ WorkingDirectory=/opt/birdhouse-viewer/server-scripts
 ExecStart=/usr/bin/python /opt/birdhouse-viewer/server-scripts/motion_notification_handler.py
 
 # Environment variables
-Environment="MQTT_BROKER=nt2500.bb36.org"
+Environment="MQTT_BROKER=your-mqtt-servername"
 Environment="MQTT_PORT=1883"
 Environment="DATABASE_URL=mysql://user:password@localhost:3306/birdhouse"
 
