@@ -495,7 +495,3 @@ This project is provided as-is for educational and personal use. Please review t
 For questions, issues, or feature requests, please open an issue in the project repository or contact the development team.
 
 ---
-
-**Author**: Manus AI  
-**Version**: 1.0.0  
-**Last Updated**: November 2025
