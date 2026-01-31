@@ -1,0 +1,21 @@
+# Python dependencies for Birdhouse Viewer server scripts
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Or with virtual environment:
+#   python3 -m venv venv
+#   source venv/bin/activate
+#   pip install -r requirements.txt
+
+# MQTT client library
+paho-mqtt>=1.6.1
+
+# HTTP requests for push notifications
+requests>=2.31.0
+
+# MySQL database connector
+mysql-connector-python>=8.0.33
+
+# Environment variable management (optional)
+python-dotenv>=1.0.0

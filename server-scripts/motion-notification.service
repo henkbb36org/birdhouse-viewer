@@ -1,0 +1,28 @@
+[Unit]
+Description=Birdhouse Motion Detection Notification Handler
+After=network.target mosquitto.service mysql.service
+Wants=mosquitto.service mysql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/birdhouse-viewer/server-scripts
+ExecStart=/usr/bin/python /opt/birdhouse-viewer/server-scripts/motion_notification_handler.py
+
+# Environment variables
+Environment="MQTT_BROKER=nt2500.bb36.org"
+Environment="MQTT_PORT=1883"
+Environment="DATABASE_URL=mysql://user:password@localhost:3306/birdhouse"
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=birdhouse-motion
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,39 @@
+[Unit]
+Description=Birdhouse Viewer Backend Server
+Documentation=https://github.com/your-repo/birdhouse-viewer
+After=network.target mysql.service mosquitto.service
+Wants=mysql.service mosquitto.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/birdhouse-viewer
+
+# Environment variables
+Environment="NODE_ENV=production"
+Environment="PORT=3000"
+
+# If you need to load .env file, use:
+EnvironmentFile=/opt/birdhouse-viewer/.env
+
+# Start command
+ExecStart=/usr/local/bin/pnpm start
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitInterval=200
+StartLimitBurst=5
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=birdhouse-backend
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

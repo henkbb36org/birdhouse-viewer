@@ -1,0 +1,18 @@
+[Unit]
+Description=Birdhouse Motion Video Capture Service
+After=network.target mosquitto.service mysql.service
+Wants=mosquitto.service mysql.service
+
+[Service]
+Type=simple
+User=henk
+WorkingDirectory=/opt/birdhouse-viewer
+EnvironmentFile=/opt/birdhouse-viewer/.env
+ExecStart=/usr/bin/python3 /opt/birdhouse-viewer/motion_video_capture.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

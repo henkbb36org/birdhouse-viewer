@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1762889922246,
+      "tag": "0000_tidy_pixie",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1762889987853,
+      "tag": "0001_large_whirlwind",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1763216439560,
+      "tag": "0002_misty_beast",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1763902183872,
+      "tag": "0003_talented_payback",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1764774480787,
+      "tag": "0004_overjoyed_giant_man",
+      "breakpoints": true
+    }
+  ]
+}

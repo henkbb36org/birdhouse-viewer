@@ -1,0 +1,23 @@
+
+> birdhouse-viewer@1.0.0 build:google /opt/birdhouse-viewer
+> vite build && esbuild server/_core/index-google.ts --platform=node --packages=external --bundle --format=esm --outdir=dist && mv dist/index-google.js dist/index.js
+
+NODE_ENV=production is not supported in the .env file. Only NODE_ENV=development is supported to create a development build of your project. If you need to set process.env.NODE_ENV, you can set it in the Vite config instead.
+vite v7.1.9 building for production...
+transforming...
+✓ 1760 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                 368.30 kB │ gzip: 105.75 kB
+../dist/public/assets/index-DFHLdwZl.css  119.84 kB │ gzip:  18.63 kB
+../dist/public/assets/index-BY75Vt_i.js   845.29 kB │ gzip: 256.25 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 24.83s
+
+  dist/index-google.js  24.3kb
+
+⚡ Done in 20ms

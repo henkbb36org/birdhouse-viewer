@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1762889922246,
+      "tag": "0000_tidy_pixie",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1762889987853,
+      "tag": "0001_large_whirlwind",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1763216439560,
+      "tag": "0002_misty_beast",
+      "breakpoints": true
+    }
+  ]
+}
